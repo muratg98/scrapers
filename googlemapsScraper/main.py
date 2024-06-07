@@ -18,10 +18,10 @@ def is_website(input_str):
 
 
 def is_valid_phone_number(input_str):
-    # Remove spaces and hyphens from the input string
+    # clean input str
     cleaned_str = input_str.replace(" ", "").replace("-", "")
 
-    # Check if the cleaned string contains only numeric characters
+    # str checks
     if cleaned_str.isdigit() or (cleaned_str.startswith("+44") and cleaned_str[1:].isdigit()) or (cleaned_str.startswith("+1") and cleaned_str[1:].isdigit()):
         return True
     else:
